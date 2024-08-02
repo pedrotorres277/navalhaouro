@@ -1,5 +1,5 @@
 AOS.init();
-'use strict';
+("use strict");
 
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
@@ -19,20 +19,18 @@ const toggleNavbar = () => navbar.classList.toggle("active");
 
 addEventOnElem(navToggler, "click", toggleNavbar);
 
-const closeNavbar = () => navbar.classList.remove("active")
+const closeNavbar = () => navbar.classList.remove("active");
 
 addEventOnElem(navLinks, "click", closeNavbar);
 
-
-const header = document.querySelector("[data-header]")
+const header = document.querySelector("[data-header]");
 
 const headerActive = function () {
-    if (window.scrollY > 100) {
-        header.classList.add("active")
-    }
-    else{
-        header.classList.remove("active")
-    }
-}
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+};
 
-addEventOnElem(window, "scroll", headerActive)
+addEventOnElem(window, "scroll", headerActive);
