@@ -327,6 +327,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 568px) {
+  .service{
+    padding-top: 95vh;
+  }
+}
 .services-content h2 {
   text-transform: uppercase;
   text-shadow: 3px 3px 3px gray;
