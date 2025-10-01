@@ -398,6 +398,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 14px;
+  flex-shrink: 1;
   background-color: #fff;
   z-index: 99;
 }
